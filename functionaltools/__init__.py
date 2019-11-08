@@ -17,6 +17,13 @@ from split_with import split_with
 from sum import sum
 from tail import tail
 from tap import tap
+from map import map
+from filter import filter
+from equals import equals
+from apply import apply
+from compare import compare
+from prop import prop
+from pluck import pluck
 
 # @curry
 # def flatten(xs):
@@ -32,28 +39,7 @@ from tap import tap
 
 
 
-# @curry
-# def map(fn, xs):
-#     try:
-#         _ = iter(xs)
-#     except TypeError:
-#         xs = []
-#     return __builtin__.map(fn, xs)
 
-
-# @curry
-# def filter(fn, xs):
-#     # TODO: test me
-#     try:
-#         _ = iter(xs)
-#     except TypeError:
-#         xs = []
-#     return __builtin__.filter(fn, xs)
-
-
-# @curry
-# def prop(prop, props={}):
-#     return props.get(prop)
 
 
 # @curry
