@@ -4,15 +4,13 @@ from functionaltools import reduce
 
 @pytest.fixture
 def list_a():
-    return [0, 1, 2, 3, 4]
+    return ["a", "b", "c"]
 
 
-def test_reducer(list_a):
-    sum = reduce(lambda a, b: a + b)
-    assert sum(list_a) == 10
+class TestReduce:
+    def test_reduce(self, list_a):
+        assert reduce(lambda a, b: a + b)(list_a) == "abc"
 
-
-def test_with_initial(list_a):
-    """Should start with 1."""
-    sum = reduce(lambda a, b: a + b, init=1)
-    assert sum(list_a) == 11
+    def test_init(self, list_a):
+        """Should start with z."""
+        assert reduce(lambda a, b: a + b, init="z")(list_a) == "zabc"

@@ -2,7 +2,6 @@ from reduce import reduce
 
 
 def pipe(*fs):
-    def f(x):
-        pipeline = reduce(lambda v, f: f(v), init=x)
-        return pipeline(fs)
-    return f
+    def pipe_(x):
+        return reduce(lambda x, f: f(x), init=x)(fs)
+    return pipe_

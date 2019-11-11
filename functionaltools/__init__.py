@@ -1,29 +1,46 @@
-import __builtin__
-
 from add import add
+from all import all
+from any import any
+from append import append
+from apply import apply
+from compare import compare
+from complement import complement
+from compose import compose
+from cond import cond
+from const import const
 from curry import curry
 from dec import dec
+from equals import equals
+from F import F
+from filter import filter
+from gt import gt
+from gte import gte
+from has import has
 from head import head
+from identity import identity
+from if_else import if_else
 from inc import inc
 from join import join
 from join_with import join_with
 from lowercase import lowercase
+from lt import lt
+from lte import lte
+from map import map
 from multiply import multiply
+from otherwise import otherwise
 from pipe import pipe
+from pluck import pluck
 from product import product
+from prop import prop
 from reduce import reduce
+from reduce_right import reduce_right
+from reverse import reverse
 from split import split
 from split_with import split_with
 from sum import sum
+from T import T
 from tail import tail
 from tap import tap
-from map import map
-from filter import filter
-from equals import equals
-from apply import apply
-from compare import compare
-from prop import prop
-from pluck import pluck
 
 # @curry
 # def flatten(xs):
@@ -39,86 +56,15 @@ from pluck import pluck
 
 
 
-
-
-
-# @curry
-# def equals(a, b):
-#     return a == b
-
-
-# @curry
-# def gt(a, b):
-#     return a > b
-
-
-# @curry
-# def notEquals(a, b):
-#     return complement(equals(a, b))
-    
-
-# @curry
-# def complement(x):
-#     return not x
-
-
-# @curry
-# def ifElse(condition, onTrue, onFalse, xs):
-#     return onTrue(xs) if condition(xs) else onFalse(xs)
-
-
-# @curry
-# def any(f, xs):
-#     return __builtin__.any(f(x) for x in xs)
-
-
 # @curry
 # def all(f, xs):
 #     return __builtin__.all(f(x) for x in xs)
 
 
 # @curry
-# def fork(accumulator, condition, xs):
-#     """Process a collection into two collections.
-    
-#     Args:
-#         accumulator (list): You're splitting a list into two, so your initial
-#             containers should be something like a 2 dimensional array.
-#         condition (function): Truth-y goes into 1st container and false-y
-#             goes into 2nd container.
-#         xs (list): original list
-    
-#     Returns:
-#         (collection): collections within a collection
-#     """
-#     @curry
-#     def forker(condition, acc, x):
-#         print(x)
-#         if condition(x):
-#             acc[0].append(x)  
-#         else:
-#             acc[1].append(x)                
-#         return acc
-#     return reduce(forker(condition), accumulator)(xs)
-
-
-# @curry
-# def compliance(condition, xs):
-#     return fork(([],[]), condition, xs)
-
-
-# @curry
 # def elem(x, xs):
 #     return x in xs
 
-
-# @curry
-# def has(prop, props):
-#     try:
-#         _ = iter(props)
-#     except TypeError:
-#         props = {}
-#     return prop in props
 
 
 # @curry

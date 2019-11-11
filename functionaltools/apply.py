@@ -1,6 +1,7 @@
 from curry import curry
+from reduce import reduce
 
 
 @curry
-def apply(fn, xs):
-    return map(fn, xs)
+def apply(fn, args):
+    return fn(*args)
