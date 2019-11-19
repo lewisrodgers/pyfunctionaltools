@@ -1,4 +1,4 @@
-import __builtin__
+import builtins
 
 
-sum = __builtin__.sum
+sum = builtins.sum

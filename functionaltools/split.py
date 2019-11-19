@@ -1,4 +1,4 @@
-from split_with import split_with
+from .split_with import split_with
 
 
 def split(sep=None):

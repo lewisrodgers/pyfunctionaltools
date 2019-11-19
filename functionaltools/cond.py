@@ -1,14 +1,14 @@
-from append import append
-from apply import apply
-from identity import identity
-from if_else import if_else
-from map import map
-from pipe import pipe
-from reduce import reduce
-from reverse import reverse
-from head import head
-from otherwise import otherwise
-from reduce_right import reduce_right
+from .append import append
+from .apply import apply
+from .identity import identity
+from .if_else import if_else
+from .map import map
+from .pipe import pipe
+from .reduce import reduce
+from .reverse import reverse
+from .head import head
+from .otherwise import otherwise
+from .reduce_right import reduce_right
 
 
 def cond(*conditions):

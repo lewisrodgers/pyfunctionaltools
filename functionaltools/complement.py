@@ -1,4 +1,4 @@
-from curry import curry
+from .curry import curry
 
 @curry
 def complement(f, x):

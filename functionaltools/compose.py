@@ -1,4 +1,4 @@
-from reduce_right import reduce_right
+from .reduce_right import reduce_right
 
 
 def compose(*fs):

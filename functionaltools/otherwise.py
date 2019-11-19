@@ -1,5 +1,5 @@
-from identity import identity
-from if_else import if_else
+from .identity import identity
+from .if_else import if_else
 
 
 def otherwise(condition, on_true):

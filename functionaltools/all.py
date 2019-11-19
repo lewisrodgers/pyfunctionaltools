@@ -1,7 +1,7 @@
-import __builtin__
+import builtins
 
-from curry import curry
-from map import map
+from .curry import curry
+from .map import map
 
 
 @curry
@@ -15,4 +15,4 @@ def all(f, lst):
     Returns:
         bool: `true` if the predicate is satisfied by every element, `false` otherwise.
     """
-    return __builtin__.all(map(f, lst))
+    return builtins.all(map(f, lst))

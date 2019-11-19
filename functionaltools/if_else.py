@@ -1,6 +1,6 @@
-from curry import curry
-from identity import identity
-from F import F
+from .curry import curry
+from .identity import identity
+from .F import F
 
 
 @curry

@@ -1,6 +1,6 @@
-import __builtin__
+import builtins
 
-from functionaltools import curry
+from .curry import curry
 
 
 @curry
@@ -9,4 +9,4 @@ def filter(fn, xs):
         _ = iter(xs)
     except TypeError:
         xs = []
-    return __builtin__.filter(fn, xs)
+    return list(builtins.filter(fn, xs))

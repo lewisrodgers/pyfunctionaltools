@@ -1,6 +1,9 @@
 def curry(x, argc=None):
     if argc is None:
-        argc = x.func_code.co_argcount
+        try:
+            argc = x.func_code.co_argcount
+        except:
+            argc = x.__code__.co_argcount
     def curry_p(*a):
         if len(a) == argc:
             return x(*a)

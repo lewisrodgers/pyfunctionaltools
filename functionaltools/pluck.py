@@ -1,6 +1,6 @@
-from curry import curry
-from map import map
-from prop import prop
+from .curry import curry
+from .map import map
+from .prop import prop
 
 
 @curry

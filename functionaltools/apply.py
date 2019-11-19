@@ -1,5 +1,5 @@
-from curry import curry
-from reduce import reduce
+from .curry import curry
+from .reduce import reduce
 
 
 @curry

@@ -1,4 +1,4 @@
-from always import always
+from .const import const
 
 
-F = always(False)
+F = const(False)

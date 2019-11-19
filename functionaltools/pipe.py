@@ -1,4 +1,4 @@
-from reduce import reduce
+from .reduce import reduce
 
 
 def pipe(*fs):

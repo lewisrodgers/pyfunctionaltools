@@ -2,5 +2,5 @@ from .curry import curry
 
 
 @curry
-def add(a, b):
-    return a + b
+def count_by(f, lst):
+    pass 
