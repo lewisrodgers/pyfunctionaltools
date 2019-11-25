@@ -16,10 +16,6 @@ def cond(*conditions):
     default_cond = append(pipe(reverse, head, apply(otherwise)))
     nest_ifs = reduce_right(lambda x, f: f(x))
     def cond_(x):
-        ifs = pipe(partials, default_cond, nest_ifs)(conditions)
+        ifs = pipe(partials, list, default_cond, nest_ifs)(conditions)
         return ifs(x)
     return cond_
-
-# fs = append(identity, map(apply(if_else), conditions))
-# ifs = reduce(lambda a, v: v(a))(reverse(fs))
-# return ifs(x)
