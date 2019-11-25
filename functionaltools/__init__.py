@@ -42,6 +42,8 @@ from .T import T
 from .tail import tail
 from .tap import tap
 from .assoc import assoc
+from .abspath import abspath
+from .open import open
 
 # @curry
 # def flatten(xs):
