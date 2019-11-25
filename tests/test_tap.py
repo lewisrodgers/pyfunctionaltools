@@ -1,5 +1,10 @@
 from functionaltools import tap
 
 
+def foo(x):
+    print("blah {}".format(x))
+
+
 def test_tap():
-    assert tap("a") == "a"
+    log = tap(foo)
+    assert log("a") == "a"

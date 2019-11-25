@@ -7,4 +7,5 @@ def test_pluck():
         {"name": "pam", "age": 37}
     ]
     names = pluck("name")
-    assert names(people) == ["jim", "pam"]
+    results = names(people)
+    assert list(results) == ["jim", "pam"]

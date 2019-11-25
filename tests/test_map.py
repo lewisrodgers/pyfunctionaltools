@@ -9,4 +9,5 @@ def predicate():
 
 def test_map(predicate):
     addOne = map(predicate)
-    assert addOne([1, 2, 3]) == [2, 3, 4]
+    results = addOne([1, 2, 3])
+    assert list(results) == [2, 3, 4]
