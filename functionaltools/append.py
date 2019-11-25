@@ -2,6 +2,6 @@ from .curry import curry
 
 
 @curry
-def append(x, xs):
-    xs.append(x)
-    return xs
+def append(x, lst):
+    lst.append(x)
+    return lst

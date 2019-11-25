@@ -4,9 +4,9 @@ from .curry import curry
 
 
 @curry
-def map(fn, xs):
+def map(f, itr):
     try:
-        _ = iter(xs)
+        _ = iter(itr)
     except TypeError:
-        xs = []
-    return list(builtins.map(fn, xs))
+        itr = []
+    return builtins.map(f, itr)

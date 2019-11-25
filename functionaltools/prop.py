@@ -2,14 +2,14 @@ from .curry import curry
 
 
 @curry
-def prop(p, ps):
+def prop(p, dct):
     """Returns a function that when supplied an object returns the indicated property of that object, if it exists.
         
     Args:
         p (str): The property name or array index
-        ps (dict): The properties to query
+        dct (dict): The properties to query
 
     Returns:
-        The value at `ps[p]`
+        The value at `dct[p]`
     """
-    return ps.get(p)
+    return dct.get(p)

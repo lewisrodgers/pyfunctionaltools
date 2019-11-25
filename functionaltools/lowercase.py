@@ -1,2 +1,2 @@
-def lowercase(x):
-    return x.lower()
+def lowercase(s):
+    return s.lower()

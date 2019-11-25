@@ -2,9 +2,9 @@ from .curry import curry
 
 
 @curry
-def has(p, ps):
+def has(p, dct):
     try:
-        _ = iter(ps)
+        _ = iter(dct)
     except TypeError:
-        ps = {}
-    return p in ps
+        dct = {}
+    return p in dct

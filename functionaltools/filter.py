@@ -4,9 +4,9 @@ from .curry import curry
 
 
 @curry
-def filter(fn, xs):
+def filter(f, itr):
     try:
-        _ = iter(xs)
+        _ = iter(itr)
     except TypeError:
-        xs = []
-    return list(builtins.filter(fn, xs))
+        itr = []
+    return builtins.filter(f, itr)

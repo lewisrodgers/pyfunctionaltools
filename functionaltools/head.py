@@ -1,2 +1,2 @@
-def head(xs):
-    return xs[0]
+def head(lst):
+    return lst[0]
